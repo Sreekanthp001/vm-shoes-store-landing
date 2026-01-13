@@ -50,7 +50,9 @@ const Hero = () => {
           alt='shoe collection'
           width={610}
           height={502}
-          className='object-contain relative z-10' // Add z-10 here
+          /* VentureMond Fix: style={{ zIndex: 1 }} petti image ni stack lo kindhaki thoyali */
+          style={{ position: 'relative', zIndex: 1 }}
+          className='object-contain relative' 
         />
 
         <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
